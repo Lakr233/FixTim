@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "auxiliaryexecute",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Lakr233/AuxiliaryExecute",
+      "state" : {
+        "revision" : "5a36e877cb371583c539503f476856ea714108b9",
+        "version" : "2.0.0"
+      }
+    },
+    {
+      "identity" : "colorfulx",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Lakr233/ColorfulX",
+      "state" : {
+        "revision" : "36d17615994b46fa11d6632b9e014285befe0cd0",
+        "version" : "2.4.0"
+      }
+    },
+    {
+      "identity" : "pow",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/EmergeTools/Pow",
+      "state" : {
+        "revision" : "cc014eba4b65f689cadc281ad925de5607f2adc9",
+        "version" : "1.0.3"
+      }
+    },
+    {
+      "identity" : "springinterpolation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Lakr233/SpringInterpolation.git",
+      "state" : {
+        "revision" : "be8721cffc87ec514fa13ba5dab586a2730f51c9",
+        "version" : "1.1.2"
+      }
+    }
+  ],
+  "version" : 2
+}
