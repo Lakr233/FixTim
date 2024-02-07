@@ -16,10 +16,22 @@ This tool can address issues like:
 - Wi-Fi failing to scan or connect
 - Any unresponsive or spinning app
 - iCloud sync issues
+- Xcode not looking for devices
+- Xcode Simulator not booting
+- debugserver not responding
 
 And more ...
 
 **Please note, however, this app does not have the ability to fix hardware problems or kernel bugs.**
+
+## macOS below 13.0
+
+You can compile the command line tool located at [./Resources/CommandLineTool.swift](./Resources/CommandLineTool.swift) and execute there.
+
+```bash
+swiftc -o fixtim ./Resources/CommandLineTool.swift
+./fixtim
+```
 
 ## Principles
 

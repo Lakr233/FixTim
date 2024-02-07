@@ -34,6 +34,7 @@ struct FixTim: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .preferredColorScheme(.dark)
                 .onAppear { setFloatingWindow() }
                 .onDisappear { exit(0) }
         }
