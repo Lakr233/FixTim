@@ -10,6 +10,7 @@ There are numerous instances where we may need to restart our Mac to rectify a g
 
 This tool can address issues like:
 
+- Screenshot sucks on desktop
 - Lagging Input Method Editor (IME)
 - Disrupted core audio stream
 - AirDrop malfunction or inefficiency
