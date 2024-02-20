@@ -54,4 +54,4 @@ sudo /Applications/FixTim.app/Contents/MacOS/FixTim --now
 
 ---
 
-Copyrigth (c) 2024, Lakr Aream, All Rights Reserved.
+Copyright (c) 2024, Lakr Aream, All Rights Reserved.
