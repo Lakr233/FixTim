@@ -238,6 +238,7 @@ struct ContentView: View {
         openTimCook = true
         DispatchQueue.global().asyncAfter(deadline: .now() + 1) {
             _executeRestart()
+            _forceReloadExtensions()
         }
     }
 
@@ -302,6 +303,31 @@ struct ContentView: View {
         AuxiliaryExecute.spawn(
             command: "/usr/bin/killall",
             args: ["-9", "Dock"]
+        )
+    }
+    
+    private func _forceReloadExtensions() {
+        let lsregisterCommand = "/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister"
+        AuxiliaryExecute.spawn(
+            command: lsregisterCommand,
+            args: [
+                "-f",
+                "/Applications/Xcode.app",
+            ]
+        )
+        AuxiliaryExecute.spawn(
+            command: lsregisterCommand,
+            args: [
+                "-f",
+                "/Applications/Safari.app",
+            ]
+        )
+        AuxiliaryExecute.spawn(
+            command: lsregisterCommand,
+            args: [
+                "-f",
+                "/System/Library/CoreServices/Finder.app",
+            ]
         )
     }
 }
