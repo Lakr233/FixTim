@@ -42,7 +42,7 @@ This process is akin to a soft reboot on Android, which is fast and doesn't cons
 
 ## Admin Privileges
 
-Most of the issue wont require an administator previliges, but some of them will. If you need it, execute the binary in terminal with a parameter `--now`.
+Most of the issue wont require an administator privileges, but some of them will. If you need it, execute the binary in terminal with a parameter `--now`.
 
 ```bash
 sudo /Applications/FixTim.app/Contents/MacOS/FixTim --now
