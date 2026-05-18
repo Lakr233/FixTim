@@ -14,6 +14,7 @@
 		50B09A632B72556E008323EA /* ColorfulX in Frameworks */ = {isa = PBXBuildFile; productRef = 50B09A622B72556E008323EA /* ColorfulX */; };
 		50B09A692B7259F1008323EA /* Restart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B09A682B7259F1008323EA /* Restart.swift */; };
 		50E72EA52B725EBB00B3F613 /* Pow in Frameworks */ = {isa = PBXBuildFile; productRef = 50E72EA42B725EBB00B3F613 /* Pow */; };
+		A7BA7A4263A1BD075C7F9FEC /* LookInsideServer in Frameworks */ = {isa = PBXBuildFile; productRef = EF5616C288373E82ADBE1B65 /* LookInsideServer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 				50B09A632B72556E008323EA /* ColorfulX in Frameworks */,
 				50E72EA52B725EBB00B3F613 /* Pow in Frameworks */,
 				509A6F512B72752300B8F511 /* AuxiliaryExecute in Frameworks */,
+				A7BA7A4263A1BD075C7F9FEC /* LookInsideServer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +95,7 @@
 				50B09A622B72556E008323EA /* ColorfulX */,
 				50E72EA42B725EBB00B3F613 /* Pow */,
 				509A6F502B72752300B8F511 /* AuxiliaryExecute */,
+				EF5616C288373E82ADBE1B65 /* LookInsideServer */,
 			);
 			productName = JustFixItX;
 			productReference = 50B09A4F2B725213008323EA /* FixTim.app */;
@@ -126,6 +129,7 @@
 				50B09A612B72556E008323EA /* XCRemoteSwiftPackageReference "ColorfulX" */,
 				50E72EA32B725EBB00B3F613 /* XCRemoteSwiftPackageReference "Pow" */,
 				509A6F4F2B72752300B8F511 /* XCRemoteSwiftPackageReference "AuxiliaryExecute" */,
+				28CE723D8F914B93DE77AD2E /* XCRemoteSwiftPackageReference "LookInside-Release" */,
 			);
 			productRefGroup = 50B09A502B725213008323EA /* Products */;
 			projectDirPath = "";
@@ -320,6 +324,10 @@
 				DEVELOPMENT_TEAM = 964G86XT2P;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = NO;
+				EXCLUDED_SOURCE_FILE_NAMES = (
+					"$(inherited)",
+					"LookInsideServer*",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Fix Tim";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
@@ -361,6 +369,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		28CE723D8F914B93DE77AD2E /* XCRemoteSwiftPackageReference "LookInside-Release" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LookInsideApp/LookInside-Release.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.2;
+			};
+		};
 		509A6F4F2B72752300B8F511 /* XCRemoteSwiftPackageReference "AuxiliaryExecute" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Lakr233/AuxiliaryExecute";
@@ -382,7 +398,7 @@
 			repositoryURL = "https://github.com/EmergeTools/Pow";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.3;
+				minimumVersion = 1.0.6;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -402,6 +418,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 50E72EA32B725EBB00B3F613 /* XCRemoteSwiftPackageReference "Pow" */;
 			productName = Pow;
+		};
+		EF5616C288373E82ADBE1B65 /* LookInsideServer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28CE723D8F914B93DE77AD2E /* XCRemoteSwiftPackageReference "LookInside-Release" */;
+			productName = LookInsideServer;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
