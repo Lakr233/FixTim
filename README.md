@@ -52,10 +52,10 @@ sudo /Applications/FixTim.app/Contents/MacOS/FixTim --now
 
 [MIT License](./LICENSE)
 
----
-
-Copyright (c) 2024, Lakr Aream, All Rights Reserved.
-
 ## Sponsor
 
 [LookInside](https://lookinside-app.com/) helps you inspect a running iOS or macOS app UI from your Mac.
+
+---
+
+Copyright (c) 2024, Lakr Aream, All Rights Reserved.
